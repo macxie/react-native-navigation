@@ -107,10 +107,10 @@ android {
 }
 
 dependencies {
-	implementation fileTree(dir: "libs", include: ["*.jar"])
-	implementation "com.android.support:appcompat-v7:25.4.0"
-	implementation "com.facebook.react:react-native:+"
-	implementation project(':react-native-navigation')
+	compile fileTree(dir: "libs", include: ["*.jar"])
+	compile "com.android.support:appcompat-v7:25.4.0"
+	compile "com.facebook.react:react-native:+"
+	compile project(':react-native-navigation')
 }
 ```
 > react-native-navigation supports multiple React Native versions. Target the React Native version required by your project by specifying the RNN build flavor you require.
@@ -215,8 +215,8 @@ configurations.all {
 
 dependencies {
     ...
-    implementation 'com.android.support:design:25.4.0'
-    implementation 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support:design:25.4.0'
+    compile 'com.android.support:appcompat-v7:25.4.0'
 }
 
 ```
